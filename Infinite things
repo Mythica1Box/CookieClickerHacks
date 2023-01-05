@@ -1,0 +1,7 @@
+//For people who want infinitely replenishing infinite cookies (because there is such a thing as buildings costing infinite cookies)
+//if it lags your computer replace 2 with a bigger number
+//to stop script type in clearInterval(inf)
+inf = setInterval(function(){Game.cookies=Infinity}, 2)
+
+//for infinite lumps
+Game.lumps = Infinity
