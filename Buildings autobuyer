@@ -1,0 +1,41 @@
+//complex version that buys more
+
+setInterval(multiply, 1) //initiates
+instances=0
+b = 10
+wantedinstances = b * 19 
+function multiply(){
+if(instances != wantedinstances){
+setInterval(buy, 1)
+setInterval(multiply, 1)
+instances += 1
+}
+}
+i=0
+function buy(){
+if(instances == wantedinstances){
+i+=1
+if(i >= 19 ){
+i=0
+}
+Game.cookies = Infinity
+Game.ObjectsById[i].buy()
+}
+}
+
+// b is how much you want to buy everything in a millisecond i.e if you want 10 of each building put 10 for what b is equal to (it will only do it as fast as it can)
+
+//simple script buys all in approx. 19 milliseconds
+
+setInterval(buy, 1)
+i=0
+function buy(){
+i+=1
+if(i >= 19 ){
+i=0
+}
+Game.cookies = Infinity
+Game.ObjectsById[i].buy()
+}
+
+
