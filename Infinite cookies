@@ -1,2 +1,0 @@
-//For people who want infinitely replenishing infinite cookies (because there is such a thing as buildings costing infinite cookies)
-setInterval(function(){Game.cookies=Infinity}, 2) //if it lags your computer replace 2 with a bigger number
